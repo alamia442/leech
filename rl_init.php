@@ -7,7 +7,7 @@ if (count(get_included_files()) == 1) {
 }
 
 @set_time_limit(0);
-@ini_set('memory_limit', '1024M');
+@ini_set('memory_limit', '512M');
 if (ini_get('zlib.output_compression')) @ini_set('zlib.output_compression', 0);
 if (ob_get_level()) ob_end_clean();
 ob_implicit_flush(true);
